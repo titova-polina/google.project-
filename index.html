@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" src="./styles/styles.css" />
     <title>Document</title>
   </head>
   <body>
@@ -15,11 +16,9 @@
     </header>
     <main>
       <section id="main">
-        <use xlink:href="./images.google/sprite.svg#genshin"></use>
-        <h1
-          class="main__logo"
-          xlink:href="url('chrome://new-tab-page/icons/google_logo.svg')"
-        ></h1>
+        <h1 class="main__logo">
+          <svg><use xlink:href="./images/sprite.svg#logo"></use></svg>
+        </h1>
         <input
           type="text"
           class="main__input"
