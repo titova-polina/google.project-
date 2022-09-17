@@ -7,9 +7,14 @@
     padding-right: 4px;
   }
   &__link {
-    font-size: 13px;
-    color: #f1f1f1;
+    font-size: 14px;
+    color: white;
     padding-right: 15px;
     cursor: pointer;
+
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+    }
   }
 }

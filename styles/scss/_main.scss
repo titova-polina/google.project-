@@ -2,14 +2,20 @@
   background-image: url("/images.google/genshin.jpg");
   height: 100vh;
   background-size: cover;
+  padding-top: 200px;
 }
 
 .main {
+  &__search {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   &__input {
-    position: absolute;
-    top: 320px;
-    left: 350px;
     padding: 12px 50px;
+    border: none;
+    outline: none;
     border-radius: 25px;
     background: #fff;
     color: #212121;
@@ -17,19 +23,35 @@
     font-weight: 100;
     transition: border-color 250ms ease-in;
     width: 100%;
-    margin-right: 12px;
-    max-width: 561px;
+    min-width: 360px;
 
-    &,
-    textarea {
-      outline: none;
-      border: none;
+    @media screen and (min-width: 768px) {
+      min-width: 561px;
     }
   }
-  &__logo {
+  &__input-wrapper {
+    position: relative;
+  }
+  &__input-icon {
     position: absolute;
-    top: 190px;
-    left: 500px;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  &__input-microphone {
+    background-image: url("/images.google/sprite.svg#microphone");
+    background-size: 21px 21px;
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+  &__logo {
     fill: #eee;
+    & > svg {
+      width: 270px;
+      height: 127px;
+    }
   }
 }

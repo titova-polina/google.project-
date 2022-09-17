@@ -16,15 +16,26 @@
     </header>
     <main>
       <section id="main">
-        <h1 class="main__logo">
-          <svg><use xlink:href="./images.google/sprite.svg#logo"></use></svg>
-        </h1>
-        <input
-          type="text"
-          class="main__input"
-          placeholder="Шукайте в Google або введіть URL-адресу"
-          name="text"
-        />
+        <div class="main__search">
+          <h1 class="main__logo">
+            <svg><use xlink:href="./images.google/sprite.svg#logo"></use></svg>
+          </h1>
+          <div class="main__input-wrapper">
+            <input
+              type="text"
+              class="main__input"
+              placeholder="Шукайте в Google або введіть URL-адресу"
+              name="text"
+            />
+            <svg class="main__input-icon" width="24" height="24">
+              <use xlink:href="./images.google/sprite.svg#furfur"></use>
+            </svg>
+            <button
+              class="main__input-microphone"
+              title="Пошук голосом"
+            ></button>
+          </div>
+        </div>
       </section>
     </main>
   </body>
