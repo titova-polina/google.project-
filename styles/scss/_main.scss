@@ -1,5 +1,5 @@
 #main {
-  background-image: url("../../images.google/genshin.jpg");
+  background-image: url("../images.google/genshin.jpg");
   height: 100vh;
   background-size: cover;
   background-position: center;
@@ -51,14 +51,14 @@
     }
   }
   &__input-icon {
-    background-image: url(../../images.google/furfur.svg);
+    background-image: url(../images.google/furfur.svg);
     width: 24px;
     height: 24px;
     left: 15px;
     @extend %icon;
   }
   &__input-microphone {
-    background-image: url(../../images.google/mike.svg);
+    background-image: url(../images.google/mike.svg);
     right: 15px;
     cursor: pointer;
     width: 26px;
